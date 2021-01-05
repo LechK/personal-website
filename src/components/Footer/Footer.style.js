@@ -19,8 +19,7 @@ export const Email = styled.a`
   /* background-image: url(${linkedin});
   background-repeat: no-repeat; */
   text-decoration: none;
-  &:hover {
-    text-decoration: underline;
+  &:hover {    
     transition: 0.5s;
     color: ${({ theme }) => theme.lightGrey};
   }
@@ -35,7 +34,6 @@ export const Link = styled.a`
   color: ${({ theme }) => theme.react};
   text-decoration: none;
   &:hover {
-    text-decoration: underline;
     transition: 0.5s;
     color: ${({ theme }) => theme.lightGrey};
   }

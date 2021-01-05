@@ -30,7 +30,6 @@ export const StyledLink = styled(Link)`
   color: ${({ theme }) => theme.react};
   text-decoration: none;
   &:hover {
-    text-decoration: underline;
     transition: 0.5s;
     color: ${({ theme }) => theme.lightGrey};
   }

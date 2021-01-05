@@ -11,7 +11,7 @@ function Routes() {
       <Header />
       <Suspense fallback={<Loading />}>
         <Switch>
-          <Route exact path="/main" component={LazyHome} />
+          <Route exact path="/" component={LazyHome} />
           <Route exact path="/about" component={AboutLazy} />
         </Switch>
       </Suspense>
@@ -20,7 +20,7 @@ function Routes() {
         links={[
           {
             to: "https://www.linkedin.com/in/lechkuznecov",
-            name: "Linked In",
+            name: "LinkedIn",
           },
           {
             to: "https://www.github.com/LechKuznecov",
