@@ -1,8 +1,8 @@
 const theme = {
   // colors
   react: "rgb(94, 211, 243)",
-  lightGrey: "rgb(229, 229, 229)",
-  darkGrey: "rgb(29, 29, 29)",
+  lightGrey: "rgb(255, 255, 255)",
+  darkGrey: "rgb(3, 4, 15)",
 
   primary: {
     background: "#222222",
@@ -22,7 +22,7 @@ const theme = {
   },
   //for responsiveness
   mobile: "576px",
-  medium: "767px",
+  medium: "796px",
 };
 
 export default theme;
