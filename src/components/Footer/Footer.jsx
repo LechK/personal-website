@@ -1,21 +1,23 @@
 import React from "react";
 import * as S from "./Footer.style";
 
-function Footer({ email, links, copyright }) {
+function Footer({ email, copyright }) {
   return (
     <S.Footer>
       <S.Heading>Want to reach me?</S.Heading>
       <S.Email href={`mailto:${email}`}>{email}</S.Email>
-      <S.Navigation>
-        {links &&
-          links.map((link) => {
-            return (
-              <S.Link key={link.to} href={`${link.to}`}>
-                {link.name}
-              </S.Link>
-            );
-          })}
-      </S.Navigation>
+      <S.SocialBox>
+        <S.StyledSocialIcon
+          url="http://linkedin.com/in/lechkuznecov"
+          style={{ height: 30, width: 30 }}
+          bgColor="#2867b2"
+        />
+        <S.StyledSocialIcon
+          url="http://github.com/LechKuznecov"
+          style={{ height: 30, width: 30 }}
+          bgColor="#eef3fc"
+        />
+      </S.SocialBox>
       <S.Copyright>{copyright}</S.Copyright>
     </S.Footer>
   );

@@ -16,17 +16,7 @@ function Routes() {
         </Switch>
       </Suspense>
       <Footer
-        email="hi@seathustler.com"
-        links={[
-          {
-            to: "https://www.linkedin.com/in/lechkuznecov",
-            name: "LinkedIn",
-          },
-          {
-            to: "https://www.github.com/LechKuznecov",
-            name: "GitHub",
-          },
-        ]}
+        email="lech.kuznecoff@gmail.com"
         copyright="&copy; Copyright 2021, Lech Kuznecov"
       />
     </Router>
