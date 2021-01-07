@@ -5,6 +5,6 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.lightGrey};
     color: ${({ theme }) => theme.darkGrey};    
     text-rendering: optimizeLegibility;
-    font-family: 'Kanit', sans-serif;  
+    font-family: 'Josefin Sans', sans-serif;
   }
 `;
