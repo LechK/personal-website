@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Wall from "../../assets/Wall.jpg";
 
+//******************************************HOME PAGE STYLE ***************************************************************
 export const Hello = styled.div`
   background-image: url(${Wall});
   background-position: center;
@@ -11,7 +12,6 @@ export const Hello = styled.div`
   align-items: center;
   flex-direction: column;
 `;
-
 export const Welcome = styled.h1`
   color: white;
   font-size: 3.3em;
@@ -23,11 +23,9 @@ export const Welcome = styled.h1`
     font-size: 1.3em;
   }
 `;
-
 export const Span = styled.span`
   color: ${({ theme }) => theme.react};
 `;
-
 export const ArrowPlace = styled.div`
   padding: 5em 0;
   width: 760px;
@@ -44,7 +42,6 @@ export const ArrowPlace = styled.div`
     max-width: 400px;
   }
 `;
-
 export const Box = styled.div`
   display: flex;
   flex-direction: row;
@@ -54,11 +51,10 @@ export const BottomBox = styled.div`
   flex-direction: column;
   align-items: center;
 `;
-
 export const Label = styled.label`
   cursor: pointer;
   color: white;
-  font-size: 3em;
+  font-size: 2.5em;
   color: ${({ theme }) => theme.react};
   &:hover {
     color: white;
@@ -67,8 +63,21 @@ export const Label = styled.label`
     font-size: 2em;
   }
 `;
-
 export const Main = styled.div`
   max-width: 760px;
   margin: 0 auto;
+`;
+
+// **************************************** SIDE BAR STYLE *********************************************************************
+export const Heading = styled.h2`
+  color: ${({ theme }) => theme.light};
+  font-weight: bold;
+  font-size: xx-large;
+  text-align: center;
+  &::before {
+    content: "⎯⎯⎯ ";
+  }
+  &::after {
+    content: " ⎯⎯⎯";
+  }
 `;
