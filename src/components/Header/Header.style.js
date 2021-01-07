@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Header = styled.header`
   padding: 1em;
-  background-color: ${({ theme }) => theme.darkGrey};
+  background-color: ${({ theme }) => theme.dark};
 `;
 export const HeaderWrap = styled.div`
   max-width: 760px;
@@ -19,7 +19,7 @@ export const LogoLink = styled(Link)`
 
 export const Logo = styled.h1`
   margin: 0;
-  color: ${({ theme }) => theme.lightGrey};
+  color: ${({ theme }) => theme.light};
   text-decoration: none;
 `;
 
@@ -31,7 +31,7 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   &:hover {
     transition: 0.5s;
-    color: ${({ theme }) => theme.lightGrey};
+    color: ${({ theme }) => theme.light};
   }
   &:not(:last-child) {
     margin-right: 10px;

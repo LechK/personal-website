@@ -1,8 +1,8 @@
 const theme = {
   // colors
   react: "rgb(94, 240, 255)",
-  lightGrey: "rgb(255, 255, 255)",
-  darkGrey: "rgb(3, 4, 15)",
+  light: "rgb(255, 255, 255)",
+  dark: "rgb(4, 30, 43)",
 
   primary: {
     background: "#222222",

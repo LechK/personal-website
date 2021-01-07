@@ -3,14 +3,14 @@ import styled from "styled-components";
 import { SocialIcon } from "react-social-icons";
 
 export const Footer = styled.footer`
-  background-color: ${({ theme }) => theme.darkGrey};
+  background-color: ${({ theme }) => theme.dark};
   text-align: center;
   margin: 0 auto;
   padding: 2em;
 `;
 
 export const Heading = styled.h4`
-  color: ${({ theme }) => theme.lightGrey};
+  color: ${({ theme }) => theme.light};
   margin: 0;
   padding-bottom: 0.5em;
 `;
@@ -20,7 +20,7 @@ export const Email = styled.a`
   text-decoration: none;
   &:hover {
     transition: 0.5s;
-    color: ${({ theme }) => theme.lightGrey};
+    color: ${({ theme }) => theme.light};
   }
 `;
 
@@ -40,6 +40,6 @@ export const StyledSocialIcon = styled(SocialIcon)`
 `;
 
 export const Copyright = styled.p`
-  color: ${({ theme }) => theme.lightGrey};
+  color: ${({ theme }) => theme.light};
   margin: 0;
 `;

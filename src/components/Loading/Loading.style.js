@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   width: 100vw;
   height: 100vh;
   display: flex;
-  background-color: rgba(216, 221, 222);
+  background-color: ${({ theme }) => theme.light};
   justify-content: center;
   align-items: center;
 `;
