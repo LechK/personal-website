@@ -1,6 +1,6 @@
 const theme = {
   // colors
-  react: "rgb(94, 211, 243)",
+  react: "rgb(94, 240, 255)",
   lightGrey: "rgb(255, 255, 255)",
   darkGrey: "rgb(3, 4, 15)",
 
