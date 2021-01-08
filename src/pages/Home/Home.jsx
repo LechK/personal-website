@@ -49,20 +49,7 @@ function Home() {
       </S.Hello>
       {/* ***************************************************SKILL SIDE BAR*********************************************************** */}
       <SideBarMenu open={openSkills} setOpen={setOpenSkills} direction="left">
-        <S.Box className="skills">
-          <ArrowButton
-            rotation="-135deg"
-            id="right"
-            open={openSkills}
-            setOpen={setOpenSkills}
-            color="dark"
-          />
-          <S.Label htmlFor="right" className="sidebar">
-            Back
-          </S.Label>
-        </S.Box>
         <S.Heading>My acquired skills</S.Heading>
-
         <S.SkillBox>
           <SkillBar
             name="JavaScript"
@@ -162,39 +149,12 @@ function Home() {
         setOpen={setOpenPortfolio}
         direction="right"
       >
-        <S.Box className="portfolio">
-          <S.Label htmlFor="right" className="sidebar">
-            Back
-          </S.Label>
-          <ArrowButton
-            rotation="45deg"
-            id="right"
-            open={openPortfolio}
-            setOpen={setOpenPortfolio}
-            color="dark"
-          />
-        </S.Box>
         <S.Heading>My portfolio</S.Heading>
       </SideBarMenu>
       {/* ****************************************************** ABOUT SECTION ************************************************** */}
       <S.Section>
         <S.Heading>About Me</S.Heading>
       </S.Section>
-      <SideBarMenu open={openAbout} setOpen={setOpenAbout} direction="bottom">
-        <S.Heading>About Me</S.Heading>
-        <S.Box>
-          <ArrowButton
-            rotation="-135deg"
-            id="right"
-            open={openAbout}
-            setOpen={setOpenAbout}
-            color="dark"
-          />
-          <S.Label htmlFor="right" className="sidebar">
-            Back
-          </S.Label>
-        </S.Box>
-      </SideBarMenu>
     </>
   );
 }

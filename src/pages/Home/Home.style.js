@@ -39,7 +39,7 @@ export const ArrowPlace = styled.div`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     justify-content: space-evenly;
     box-sizing: content-box;
-    max-width: 400px;
+    max-width: 350px;
   }
 `;
 export const Box = styled.div`
@@ -52,7 +52,6 @@ export const BottomBox = styled.div`
   align-items: center;
 `;
 export const Label = styled.label`
-  cursor: pointer;
   color: white;
   font-size: 2.5em;
   color: ${({ theme }) => theme.react};
@@ -60,14 +59,13 @@ export const Label = styled.label`
     color: black;
   }
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 `;
 export const Main = styled.div`
   max-width: 760px;
   margin: 0 auto;
 `;
-
 // **************************************** SIDE BAR STYLE *********************************************************************
 export const Heading = styled.h2`
   color: ${({ theme }) => theme.light};
@@ -81,4 +79,24 @@ export const Heading = styled.h2`
   &::after {
     content: " ⎯⎯⎯";
   }
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    font-size: 1em;
+  }
+`;
+export const SkillBox = styled.div`
+  padding: 2em;
+  @media (max-width: ${({ theme }) => theme.medium}) {
+    margin: 0 1em;
+  }
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    padding: 0.5em;
+  }
+`;
+export const Break = styled.div`
+  height: 0.5em;
+`;
+// **************************************** ABOUT SECTION ************************************************************************
+export const Section = styled.section`
+  background-color: ${({ theme }) => theme.light};
+  padding: 1em 2em;
 `;

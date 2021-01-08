@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const StyledMenu = styled.div`
+  @media (max-width: ${({ theme }) => theme.medium}) {
+    padding: 0;
+  }
   transition: transform 0.7s ease-in-out;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
   width: 100%;
@@ -27,4 +30,6 @@ export const StyledMenu = styled.div`
 export const Container = styled.div`
   max-width: 760px;
   margin: 0 auto;
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+  }
 `;

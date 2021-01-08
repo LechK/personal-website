@@ -21,4 +21,8 @@ export const Center = styled.div`
       box-shadow: 0.3em -0.3em 0 black;
     }
   }
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 1em;
+    height: 1em;
+  }
 `;
