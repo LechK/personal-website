@@ -5,7 +5,7 @@ import * as S from "./SideBarMenu.style";
 function Menu({ open, children, direction }) {
   return (
     <S.StyledMenu open={open} className={direction}>
-      {children}
+      <S.Container>{children}</S.Container>
     </S.StyledMenu>
   );
 }
