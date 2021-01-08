@@ -13,4 +13,12 @@ export const Center = styled.div`
     border-color: ${({ theme }) => theme.react};
     box-shadow: 0.3em -0.3em 0 white;
   }
+  &.dark {
+    border-top: 0.4em solid black;
+    border-right: 0.4em solid black;
+    &:hover {
+      border-color: ${({ theme }) => theme.react};
+      box-shadow: 0.3em -0.3em 0 black;
+    }
+  }
 `;

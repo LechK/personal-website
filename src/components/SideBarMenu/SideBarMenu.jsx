@@ -4,7 +4,7 @@ import * as S from "./SideBarMenu.style";
 
 function Menu({ open, children, direction }) {
   return (
-    <S.StyledMenu open={open} direction={direction}>
+    <S.StyledMenu open={open} className={direction}>
       {children}
     </S.StyledMenu>
   );

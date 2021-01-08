@@ -56,8 +56,8 @@ export const Label = styled.label`
   color: white;
   font-size: 2.5em;
   color: ${({ theme }) => theme.react};
-  &:hover {
-    color: white;
+  &.sidebar {
+    color: black;
   }
   @media (max-width: ${({ theme }) => theme.mobile}) {
     font-size: 2em;
@@ -72,6 +72,7 @@ export const Main = styled.div`
 export const Heading = styled.h2`
   color: ${({ theme }) => theme.light};
   font-weight: bold;
+  color: black;
   font-size: xx-large;
   text-align: center;
   &::before {
