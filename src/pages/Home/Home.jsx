@@ -5,6 +5,7 @@ import * as S from "./Home.style";
 function Home() {
   const [openSkills, setOpenSkills] = useState(false);
   const [openPortfolio, setOpenPortfolio] = useState(false);
+  const [openAbout, setOpenAbout] = useState(false);
 
   return (
     <>
@@ -37,11 +38,16 @@ function Home() {
         </S.ArrowPlace>
         <S.BottomBox>
           <S.Label htmlFor="bottom">About</S.Label>
-          <ArrowButton rotation="135deg" id="bottom" />
+          <ArrowButton
+            rotation="135deg"
+            id="bottom"
+            open={openAbout}
+            setOpen={setOpenAbout}
+          />
         </S.BottomBox>
       </S.Hello>
       {/* ***************************************************SKILL SIDE BAR*********************************************************** */}
-      <SideBarMenu open={openSkills} setOpen={setOpenSkills}>
+      <SideBarMenu open={openSkills} setOpen={setOpenSkills} direction="left">
         <S.Heading>My acquired skills</S.Heading>
         <S.Box>
           <ArrowButton
@@ -49,12 +55,19 @@ function Home() {
             id="right"
             open={openSkills}
             setOpen={setOpenSkills}
+            color="dark"
           />
-          <S.Label htmlFor="right">Back</S.Label>
+          <S.Label htmlFor="right" className="sidebar">
+            Back
+          </S.Label>
         </S.Box>
       </SideBarMenu>
       {/* ****************************************************** PORTFOLIO SIDE BAR ************************************************** */}
-      <SideBarMenu open={openPortfolio} setOpen={setOpenPortfolio}>
+      <SideBarMenu
+        open={openPortfolio}
+        setOpen={setOpenPortfolio}
+        direction="right"
+      >
         <S.Heading>My portfolio</S.Heading>
         <S.Box>
           <ArrowButton
@@ -62,8 +75,27 @@ function Home() {
             id="right"
             open={openPortfolio}
             setOpen={setOpenPortfolio}
+            color="dark"
           />
-          <S.Label htmlFor="right">Back</S.Label>
+          <S.Label htmlFor="right" className="sidebar">
+            Back
+          </S.Label>
+        </S.Box>
+      </SideBarMenu>
+      {/* ****************************************************** ABOUT SIDE BAR ************************************************** */}
+      <SideBarMenu open={openAbout} setOpen={setOpenAbout} direction="bottom">
+        <S.Heading>About Me</S.Heading>
+        <S.Box>
+          <ArrowButton
+            rotation="-135deg"
+            id="right"
+            open={openAbout}
+            setOpen={setOpenAbout}
+            color="dark"
+          />
+          <S.Label htmlFor="right" className="sidebar">
+            Back
+          </S.Label>
         </S.Box>
       </SideBarMenu>
     </>

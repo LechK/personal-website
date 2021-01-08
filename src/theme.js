@@ -3,6 +3,7 @@ const theme = {
   react: "rgb(94, 240, 255)",
   light: "rgb(255, 255, 255)",
   dark: "rgb(6, 49, 65)",
+  sidebar: "rgb(235, 235, 235)",
 
   primary: {
     background: "#222222",
