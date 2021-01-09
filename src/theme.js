@@ -4,6 +4,8 @@ const theme = {
   light: "rgb(255, 255, 255)",
   dark: "rgb(6, 49, 65)",
   sidebar: "rgb(235, 235, 235)",
+  green: "rgb(94, 149, 22)",
+  blue: "rgb(61, 143, 245)",
 
   primary: {
     background: "#222222",
