@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { ArrowButton, SideBarMenu } from "../../components";
+import { ArrowButton, SideBarMenu, Workplace } from "../../components";
 import * as S from "./Home.style";
 import { SkillBar } from "react-skills";
+import Mylida from "../../assets/Mylida.png";
 
 function Home() {
   const [openSkills, setOpenSkills] = useState(false);
   const [openPortfolio, setOpenPortfolio] = useState(false);
-  const [openAbout, setOpenAbout] = useState(false);
 
   return (
     <>
@@ -38,107 +38,109 @@ function Home() {
           </S.Box>
         </S.ArrowPlace>
         <S.BottomBox>
-          <S.Label htmlFor="bottom">About</S.Label>
-          <ArrowButton
-            rotation="135deg"
-            id="bottom"
-            open={openAbout}
-            setOpen={setOpenAbout}
-          />
+          <S.Label htmlFor="bottom">About Me</S.Label>
+          <ArrowButton rotation="135deg" id="bottom" />
         </S.BottomBox>
       </S.Hello>
       {/* ***************************************************SKILL SIDE BAR*********************************************************** */}
       <SideBarMenu open={openSkills} setOpen={setOpenSkills} direction="left">
+        <ArrowButton
+          rotation="-135deg"
+          id="left"
+          color="dark"
+          open={openSkills}
+          setOpen={setOpenSkills}
+        />
         <S.Heading>My acquired skills</S.Heading>
         <S.SkillBox>
           <SkillBar
             name="JavaScript"
             level={70}
-            color="rgb(239, 216, 29)"
+            color="rgb(94, 240, 255)"
             levelProgress="true"
           />
           <S.Break />
           <SkillBar
             name="React.js"
             level={75}
-            color="rgb(0, 216, 255)"
+            color="rgb(94, 240, 255)"
             levelProgress="true"
           />
           <S.Break />
           <SkillBar
             name="Styled"
             level={85}
-            color="rgb(214, 108, 142)"
+            color="rgb(94, 240, 255)"
             levelProgress="true"
           />
           <S.Break />
           <SkillBar
             name="HTML5"
             level={70}
-            color="rgb(221, 75, 37)"
+            color="rgb(94, 240, 255)"
             levelProgress="true"
           />
           <S.Break />
           <SkillBar
             name="CSS"
             level={65}
-            color="rgb(37, 75, 221)"
+            color="rgb(94, 240, 255)"
             levelProgress="true"
           />
           <S.Break />
           <SkillBar
             name="Node.js"
             level={40}
-            color="rgb(135, 191, 0)"
+            color="rgb(94, 240, 255)"
             levelProgress="true"
           />
           <S.Break />
           <SkillBar
             name="Git"
             level={60}
-            color="rgb(233, 76, 51)"
+            color="rgb(94, 240, 255)"
             levelProgress="true"
           />
           <S.Break />
           <SkillBar
             name="REST APIs"
             level={55}
-            color="rgb(198, 223, 246)"
+            color="rgb(94, 240, 255)"
             levelProgress="true"
           />
           <S.Break />
           <SkillBar
             name="MySQL"
             level={35}
-            color="rgb(0, 117, 143)"
+            color="rgb(94, 240, 255)"
             levelProgress="true"
           />
           <S.Break />
           <SkillBar
             name="npm CLI"
             level={45}
-            color="rgb(197, 54, 53)"
+            color="rgb(94, 240, 255)"
             levelProgress="true"
           />
           <S.Break />
           <SkillBar
             name="Frameworks"
             level={66}
-            color="rgb(0, 202, 172)"
+            color="rgb(94, 240, 255)"
             levelProgress="true"
           />
           <S.Break />
           <SkillBar
             name="Responsive"
             level={80}
-            color="rgb(5, 5, 5)"
+            color="rgb(94, 240, 255)"
             levelProgress="true"
           />
           <S.Break />
           <SkillBar
             name="Dev tools"
             level={53}
-            color="rgb(4, 118, 230)"
+            color="rgb(94, 240, 255)"
             levelProgress="true"
           />
         </S.SkillBox>
@@ -149,11 +151,25 @@ function Home() {
         setOpen={setOpenPortfolio}
         direction="right"
       >
+        <ArrowButton
+          rotation="45deg"
+          id="right"
+          color="dark"
+          open={openPortfolio}
+          setOpen={setOpenPortfolio}
+        />
         <S.Heading>My portfolio</S.Heading>
       </SideBarMenu>
       {/* ****************************************************** ABOUT SECTION ************************************************** */}
       <S.Section>
-        <S.Heading>About Me</S.Heading>
+        <S.Heading>My Journey</S.Heading>
+        <Workplace
+          logo={Mylida}
+          company="Mylida"
+          position="Advertising Specialist since 2014, Team lead of 3 people - since 2018"
+          city="Vilnius"
+          info="After studies at University of applied sciences, bachelor of "
+        />
       </S.Section>
     </>
   );

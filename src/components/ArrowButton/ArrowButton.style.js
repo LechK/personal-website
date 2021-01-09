@@ -16,6 +16,8 @@ export const Center = styled.div`
   &.dark {
     border-top: 0.4em solid black;
     border-right: 0.4em solid black;
+    position: absolute;
+    margin-left: 3em;
     &:hover {
       border-color: ${({ theme }) => theme.react};
       box-shadow: 0.3em -0.3em 0 black;

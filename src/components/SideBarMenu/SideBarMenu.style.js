@@ -18,9 +18,11 @@ export const StyledMenu = styled.div`
   z-index: 3;
   &.left {
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
+    max-width: 100%;
   }
   &.right {
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+    max-width: 100%;
   }
   &.bottom {
     transform: ${({ open }) => (open ? "translateY(0)" : "translateY(100%)")};
@@ -30,6 +32,4 @@ export const StyledMenu = styled.div`
 export const Container = styled.div`
   max-width: 760px;
   margin: 0 auto;
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-  }
 `;
