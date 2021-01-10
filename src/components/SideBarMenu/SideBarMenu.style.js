@@ -8,7 +8,7 @@ export const StyledMenu = styled.div`
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
   width: 100%;
   min-height: 100vh;
-  background: ${({ theme }) => theme.sidebar};
+  background: ${({ theme }) => theme.light};
   padding: 2em 1em;
   position: fixed;
   overflow: scroll;

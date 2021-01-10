@@ -41,3 +41,8 @@ export const Info = styled.p`
   color: black;
   font-weight: lighter;
 `;
+
+export const Responsibilities = styled.ul`
+  font-weight: lighter;
+  padding-left: 1.5em;
+`;

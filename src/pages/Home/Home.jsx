@@ -166,9 +166,24 @@ function Home() {
         <Workplace
           logo={Mylida}
           company="Mylida"
-          position="Advertising Specialist since 2014, Team lead of 3 people - since 2018"
+          position="Advertising Specialist since 2015, Team lead of 3 people - since 2018"
           city="Vilnius"
-          info="After studies at University of applied sciences, bachelor of "
+          info="After studies at University of applied sciences, bachelor degree in marketing, I have landed job in 'Mylida' as a advertising specialist."
+          responsibilities={[
+            {
+              key: 1,
+              main:
+                "All advertising services, car-wrapping, outdoor and indoor lightboxes",
+            },
+            {
+              key: 2,
+              main: "Team Lead from 2018. Leading 3 people",
+            },
+            {
+              key: 3,
+              main: "Page administration (WordPress)",
+            },
+          ]}
         />
       </S.Section>
     </>
