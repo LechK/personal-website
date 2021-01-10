@@ -80,7 +80,7 @@ export const Heading = styled.h2`
     content: " ⎯⎯⎯";
   }
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 `;
 export const SkillBox = styled.div`
@@ -97,6 +97,60 @@ export const Break = styled.div`
 `;
 // **************************************** ABOUT SECTION ************************************************************************
 export const Section = styled.section`
-  background-color: ${({ theme }) => theme.light};
   padding: 1em 2em;
+  background-color: ${(props) =>
+    props.color === "primary" ? props.theme.light : props.theme.sidebar};
+`;
+export const SubHeading = styled.h3`
+  font-weight: bold;
+  color: ${({ theme }) => theme.green};
+  text-align: center;
+  &::before {
+    content: "⎯⎯ ";
+  }
+  &::after {
+    content: " ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯";
+  }
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    font-size: 0.9em;
+  }
+`;
+export const SubHeadingInt = styled.h3`
+  font-weight: bold;
+  color: ${({ theme }) => theme.green};
+  text-align: center;
+  &::before {
+    content: "⎯⎯ ";
+  }
+  &::after {
+    content: " ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯";
+  }
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    font-size: 0.9em;
+  }
+`;
+export const CompInt = styled.div`
+  display: flex;
+  justify-content: center;
+  @media (max-width: ${({ theme }) => theme.medium}) {
+    flex-direction: column;
+  }
+`;
+
+export const Competencies = styled.ul`
+  font-weight: lighter;
+  width: 310px;
+  margin: 0 auto;
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    font-size: 0.7em;
+  }
+`;
+
+export const Interests = styled.ul`
+  font-weight: lighter;
+  width: 310px;
+  margin: 0 auto;
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    font-size: 0.7em;
+  }
 `;

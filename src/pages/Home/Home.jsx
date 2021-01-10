@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { ArrowButton, SideBarMenu, Workplace } from "../../components";
+import { ArrowButton, SideBarMenu, Workplace, Studies } from "../../components";
 import * as S from "./Home.style";
 import { SkillBar } from "react-skills";
 import Mylida from "../../assets/Mylida.png";
+import Viko from "../../assets/Viko.jpg";
+import CA from "../../assets/CA.png";
 
 function Home() {
   const [openSkills, setOpenSkills] = useState(false);
@@ -160,8 +162,40 @@ function Home() {
         />
         <S.Heading>My portfolio</S.Heading>
       </SideBarMenu>
-      {/* ****************************************************** ABOUT SECTION ************************************************** */}
+      {/* *********************************************************** ABOUT ME ********************************************************** */}
       <S.Section>
+        <S.Heading>About Me</S.Heading>
+
+        <S.CompInt>
+          <div>
+            <S.SubHeading>Competencies</S.SubHeading>
+            <S.Competencies>
+              <li>Hardworking</li>
+              <li>Responsibility</li>
+              <li>Ambitiousness</li>
+              <li>Motivation</li>
+              <li>Long-term thinking</li>
+              <li>Creativity</li>
+              <li>Patiency</li>
+            </S.Competencies>
+          </div>
+          <div>
+            <S.SubHeadingInt>Interests</S.SubHeadingInt>
+            <S.Interests>
+              <li>Reading</li>
+              <li>Science</li>
+              <li>Innovations</li>
+              <li>AI & Robotics</li>
+              <li>Video Games</li>
+              <li>Music</li>
+              <li>Dogs</li>
+              <li>... and Cats</li>
+            </S.Interests>
+          </div>
+        </S.CompInt>
+      </S.Section>
+      {/* ****************************************************** MY JOURNEY SECTION ************************************************** */}
+      <S.Section color="primary">
         <S.Heading>My Journey</S.Heading>
         <Workplace
           logo={Mylida}
@@ -184,6 +218,24 @@ function Home() {
               main: "Page administration (WordPress)",
             },
           ]}
+        />
+      </S.Section>
+      {/* ********************************************************** STUDIES SECTION ************************************************* */}
+      <S.Section>
+        <S.Heading>My education</S.Heading>
+        <Studies
+          logo={CA}
+          uni="Code Academy | 2020 06 - 2020 12"
+          name="ADVANCED FRONT-END DEVELOPER'S COURSE (440HOURS)"
+          city="Vilnius"
+          info="Front-End Developer's Certificate"
+        />
+        <Studies
+          logo={Viko}
+          uni="University of Applied Sciences | 2012 - 2015"
+          name="ADVERTISING MANAGEMENT"
+          city="Vilnius"
+          info="Bachelor Degree in Marketing"
         />
       </S.Section>
     </>
