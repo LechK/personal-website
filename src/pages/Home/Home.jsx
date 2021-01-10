@@ -7,6 +7,7 @@ import {
   MyProfile,
 } from "../../components";
 import * as S from "./Home.style";
+import { Link } from "react-scroll";
 import { SkillBar } from "react-skills";
 import Mylida from "../../assets/Mylida.png";
 import Viko from "../../assets/Viko.jpg";
@@ -46,10 +47,12 @@ function Home() {
             />
           </S.Box>
         </S.ArrowPlace>
-        <S.BottomBox>
-          <S.Label htmlFor="bottom">About Me</S.Label>
-          <ArrowButton rotation="135deg" id="bottom" />
-        </S.BottomBox>
+        <Link to="about" activeClass="active" spy={true} smooth={true}>
+          <S.BottomBox>
+            <S.Label htmlFor="bottom">About Me</S.Label>
+            <ArrowButton rotation="135deg" id="bottom" />
+          </S.BottomBox>
+        </Link>
       </S.Hello>
       {/* ***************************************************SKILL SIDE BAR*********************************************************** */}
       <SideBarMenu open={openSkills} setOpen={setOpenSkills} direction="left">
@@ -170,7 +173,7 @@ function Home() {
         <S.Heading>My portfolio</S.Heading>
       </SideBarMenu>
       {/* *********************************************************** ABOUT ME ********************************************************** */}
-      <S.Section>
+      <S.Section id="about">
         <S.Heading>About Me</S.Heading>
         <MyProfile
           photo={Lech}
@@ -222,7 +225,7 @@ function Home() {
           company="Mylida"
           position="Advertising Specialist since 2015, Team lead of 3 people - since 2018"
           city="Vilnius"
-          info="After studies at University of applied sciences, bachelor degree in marketing, I have landed job in 'Mylida' as a advertising specialist."
+          info="After studies at University of applied sciences, bachelor degree in marketing, I have landed a job in 'Mylida' as an advertising specialist."
           responsibilities={[
             {
               key: 1,
