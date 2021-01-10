@@ -1,10 +1,17 @@
 import React, { useState } from "react";
-import { ArrowButton, SideBarMenu, Workplace, Studies } from "../../components";
+import {
+  ArrowButton,
+  SideBarMenu,
+  Workplace,
+  Studies,
+  MyProfile,
+} from "../../components";
 import * as S from "./Home.style";
 import { SkillBar } from "react-skills";
 import Mylida from "../../assets/Mylida.png";
 import Viko from "../../assets/Viko.jpg";
 import CA from "../../assets/CA.png";
+import Lech from "../../assets/Lech.jpg";
 
 function Home() {
   const [openSkills, setOpenSkills] = useState(false);
@@ -165,7 +172,20 @@ function Home() {
       {/* *********************************************************** ABOUT ME ********************************************************** */}
       <S.Section>
         <S.Heading>About Me</S.Heading>
-
+        <MyProfile
+          photo={Lech}
+          motto="while( ! ( succeed = try() ) )"
+          info="Aiming to become a senior developer in 3
+                years by hard work and further learning.
+                Ambitious and self-demanding.
+                I always wanted to try myself in IT, but
+                never got a chance. However, after my
+                friend introduced me to coding, I knew
+                that I wanted to become a part of it and
+                create lots of awesome projects.
+                Interested in Front-End Developers
+                position."
+        />
         <S.CompInt>
           <div>
             <S.SubHeading>Competencies</S.SubHeading>

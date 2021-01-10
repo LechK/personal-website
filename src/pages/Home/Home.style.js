@@ -136,7 +136,6 @@ export const CompInt = styled.div`
     flex-direction: column;
   }
 `;
-
 export const Competencies = styled.ul`
   font-weight: lighter;
   width: 310px;
@@ -145,11 +144,11 @@ export const Competencies = styled.ul`
     font-size: 0.7em;
   }
 `;
-
 export const Interests = styled.ul`
   font-weight: lighter;
   width: 310px;
   margin: 0 auto;
+  padding-bottom: 2em;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     font-size: 0.7em;
   }
