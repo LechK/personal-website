@@ -1,5 +1,5 @@
 import React from "react";
-import { bool, func } from "prop-types";
+// import { bool, func } from "prop-types";
 import * as S from "./ArrowButton.style";
 
 function ArrowButton({ open, setOpen, rotation, color, id }) {
@@ -17,9 +17,9 @@ function ArrowButton({ open, setOpen, rotation, color, id }) {
   }
 }
 
-ArrowButton.propTypes = {
-  open: bool.isRequired,
-  setOpen: func.isRequired,
-};
+// ArrowButton.propTypes = {
+//   open: bool.isRequired,
+//   setOpen: func.isRequired,
+// };
 
 export default ArrowButton;

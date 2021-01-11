@@ -5,6 +5,7 @@ import {
   Workplace,
   Studies,
   MyProfile,
+  Project,
 } from "../../components";
 import * as S from "./Home.style";
 import { Link } from "react-scroll";
@@ -13,6 +14,11 @@ import Mylida from "../../assets/Mylida.png";
 import Viko from "../../assets/Viko.jpg";
 import CA from "../../assets/CA.png";
 import Lech from "../../assets/Lech.jpg";
+import flight1 from "../../assets/flight1.png";
+import flight2 from "../../assets/flight2.png";
+import tvstatus1 from "../../assets/tvstatus1.png";
+import tvstatus2 from "../../assets/tvstatus2.png";
+import tvstatus3 from "../../assets/tvstatus3.png";
 
 function Home() {
   const [openSkills, setOpenSkills] = useState(false);
@@ -171,6 +177,66 @@ function Home() {
           setOpen={setOpenPortfolio}
         />
         <S.Heading>My portfolio</S.Heading>
+        <Project
+          name="Flight App"
+          link="https://flight-app-project.herokuapp.com/"
+          linkName="Check this app at heroku!"
+          screenshots={[
+            { key: 1, pic: flight1, alt: "wewewe" },
+            { key: 2, pic: flight2, alt: "yeyeye" },
+          ]}
+          features={[
+            {
+              key: 1,
+              main:
+                "Fully functioning Mailchimp subscription input to real list (with notification).",
+            },
+            {
+              key: 2,
+              main:
+                "Well made slider and plus/minus buttons with validation + calculating formula by slider position.",
+            },
+            {
+              key: 2,
+              main: "Mobile First, responsive design.",
+            },
+          ]}
+        />
+        <Project
+          name="TV STATUS"
+          link=""
+          linkName="Coming soon to live!"
+          screenshots={[
+            { key: 1, pic: tvstatus1, alt: "fullwidth" },
+            { key: 2, pic: tvstatus2, alt: "mobile" },
+            { key: 3, pic: tvstatus3, alt: "mobile" },
+          ]}
+          features={[
+            {
+              key: 1,
+              main:
+                "This project has no analogues in the whole world! Fun place to track tv series characters' status in each episode.",
+            },
+            {
+              key: 2,
+              main:
+                "Well created routes, navigation between site pages, shows, episodes.",
+            },
+            {
+              key: 3,
+              main: "Responsive design.",
+            },
+            {
+              key: 4,
+              main:
+                "TV STATUS has its own MySQL database, because no other APIs have data needed to fulfill that idea.",
+            },
+            {
+              key: 5,
+              main: "Authorisation using jwt tokens with validation.",
+            },
+          ]}
+        />
       </SideBarMenu>
       {/* *********************************************************** ABOUT ME ********************************************************** */}
       <S.Section id="about">

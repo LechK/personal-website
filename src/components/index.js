@@ -8,3 +8,4 @@ export { default as SideBarMenu } from "./SideBarMenu/SideBarMenu";
 export { default as Workplace } from "./Workplace/Workplace";
 export { default as Studies } from "./Studies/Studies";
 export { default as MyProfile } from "./MyProfile/MyProfile";
+export { default as Project } from "./Project/Project";

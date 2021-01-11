@@ -80,7 +80,7 @@ export const Heading = styled.h2`
     content: " ⎯⎯⎯";
   }
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
 `;
 export const SkillBox = styled.div`
