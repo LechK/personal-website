@@ -1,11 +1,12 @@
 import React from "react";
 import * as S from "./Footer.style";
 
-function Footer({ email, copyright }) {
+function Footer({ email, copyright, phoneNumber }) {
   return (
     <S.Footer>
       <S.Heading>Want to reach me?</S.Heading>
       <S.Email href={`mailto:${email}`}>{email}</S.Email>
+      <S.PhoneNumber>{phoneNumber}</S.PhoneNumber>
       <S.SocialBox>
         <S.StyledSocialIcon
           url="http://linkedin.com/in/lechkuznecov"

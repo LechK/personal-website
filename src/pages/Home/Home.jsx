@@ -186,7 +186,7 @@ function Home() {
                 friend introduced me to coding, I knew
                 that I wanted to become a part of it and
                 create lots of awesome projects.
-                Interested in Front-End Developers
+                Interested in Front-End Developer
                 position."
         />
         <S.CompInt>

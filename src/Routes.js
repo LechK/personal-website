@@ -14,6 +14,7 @@ function Routes() {
       </Suspense>
       <Footer
         email="lech.kuznecoff@gmail.com"
+        phoneNumber="+37060329231"
         copyright="&copy; Copyright 2021, Lech Kuznecov"
       />
     </Router>
