@@ -5,7 +5,7 @@ import Wall from "../../assets/Wall.jpg";
 export const Hello = styled.div`
   background-image: url(${Wall});
   background-position: center;
-  width: 100%;
+  max-width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -138,7 +138,7 @@ export const CompInt = styled.div`
 `;
 export const Competencies = styled.ul`
   font-weight: lighter;
-  width: 310px;
+  max-width: 310px;
   margin: 0 auto;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     font-size: 0.7em;
@@ -146,7 +146,7 @@ export const Competencies = styled.ul`
 `;
 export const Interests = styled.ul`
   font-weight: lighter;
-  width: 310px;
+  max-width: 310px;
   margin: 0 auto;
   padding-bottom: 2em;
   @media (max-width: ${({ theme }) => theme.mobile}) {
